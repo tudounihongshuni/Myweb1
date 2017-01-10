@@ -1,0 +1,123 @@
+//Bootstrap提供的样式
+@import "bootstrap.less";
+
+/*自定义样式*/
+body{
+  margin-top:@navbar-height;
+}
+
+#menu a.dropdown-text:hover{
+  color:#fff;
+}
+.main>.container>.row{
+  margin-bottom: 25px;
+}
+.main>.container>.floor2,.main>.container>.floor4{
+  background-color: #F8F8F8;
+}
+.logo-menu{
+  width:300px;
+  padding:15px;
+}
+.masking-parent{
+  position:relative;
+  /*.masking-text{
+    position:absolute;
+    margin-top:10px;
+    width:490px;
+    bottom:490px;
+     left:50px;*/
+  }
+  @media screen and (min-width:@screen-lg-min){
+   .masking-text{
+     position:absolute;
+     margin-top:10px;
+     width:570px;
+     bottom:490px;
+     left:60px;
+     }
+   }
+  @media screen and (min-width:@screen-md-min){
+    .masking-text{
+      position:absolute;
+      top:0px;
+      left:277px;
+    }
+  }
+  @media screen and (min-width:@screen-sm-min){
+    .masking-text{
+      margin-top:30px;
+    }
+  }
+  @media screen and (min-width:@screen-xs-min){
+    .masking-text{
+      margin-top:30px;
+    }
+  }
+@media screen and (min-width:@screen-xs-min){
+  .small_img{
+
+  }
+}
+
+.li1,.li2,.li3,.li4,.li5{
+  position:relative;
+  padding-bottom:15px;
+  text-align:center;
+}
+.icon_list{
+  position:relative;
+  margin-top:50px;
+  margin-bottom:5px;
+  width:240px;
+  height:52px;
+  line-height:52px;
+  >a{
+    position:absolute;
+    top:12px;
+    left:40px;
+    width:28px;
+    height:28px;
+    background-image:url("../img/icons.png");
+  }
+  >.face{
+    left:0px;
+    background-position:0px -32px;
+  }
+  >.bird{
+    left:40px;
+    background-position:-28px -32px;
+  }
+  >.camera{
+    left:80px;
+    background-position:-55px -32px;
+  }
+  >.tw{
+    left:120px;
+    background-position:-84px -32px;
+  }
+  >.weibo{
+    left:160px;
+    background-position:-112px -32px;
+  }
+}
+.hr{
+  margin-top:0px;
+  margin-bottom:0px;
+  border:1px solid #00989E;
+}
+.text-parent{
+  margin-top:5px;
+  margin-bottom:5px;
+  .text{
+    display:inline-block;
+    width:155px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+  }
+}
+.logo{
+  position:absolute;
+  top:-80%;
+}
